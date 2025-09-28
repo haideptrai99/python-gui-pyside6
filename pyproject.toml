@@ -1,0 +1,60 @@
+[tool.ruff]
+# Python 3.12
+target-version = "py312"
+
+# Giữ gần chuẩn Black/Ruff Formatter, dễ đọc file UI dài dòng
+line-length = 100
+
+# Thư mục nguồn; thêm/bớt tùy cấu trúc dự án của bạn
+src = ["src", "app", "."]
+
+# Bỏ qua các thư mục build/venv
+extend-exclude = [
+  ".venv",
+  "venv",
+  "build",
+  "dist",
+  "__pycache__",
+  ".mypy_cache",
+  ".ruff_cache",
+]
+
+[tool.ruff.lint]
+# Bộ rule thực dụng cho app GUI PySide6:
+# - E,F: pycodestyle/pyflakes (các lỗi cơ bản)
+# - I: isort (sắp xếp import)
+# - B: bugbear (một số bug pattern)
+# - UP: pyupgrade (cú pháp hiện đại)
+# - C4: flake8-comprehensions
+# - A: flake8-builtins (tránh đè tên builtins)
+# - Q: flake8-quotes (thống nhất dấu nháy)
+# - N: pep8-naming (đặt tên) — có thể relax cho file sinh tự động
+select = ["E", "F", "I", "B", "UP", "C4", "A", "Q", "N"]
+
+# Các rule bỏ qua để tương thích style formatter & code Qt/PySide6
+ignore = [
+  "E203",   # tương thích formatter về space trước dấu ':' / slice
+  "E402",   # cho phép import sau code module-level (thường trong script)
+]
+
+# Châm chước cho file sinh tự động từ Qt Designer & resource compiler
+[tool.ruff.lint.per-file-ignores]
+# File sinh bởi pyside6-uic: thường có camelCase, dòng dài, import reordering
+"**/ui_*.py" = ["E501", "N", "I001", "B", "A"]
+# File resource (*.qrc -> *_rc.py): thường rất dài và import đặc thù
+"**/*_rc.py" = ["E501", "F401", "I001", "B", "A"]
+
+[tool.ruff.lint.isort]
+# Giúp isort nhận diện đúng bên thứ ba
+known-third-party = ["PySide6"]
+# Tách nhóm import chuẩn hơn (optional)
+combine-as-imports = true
+force-sort-within-sections = true
+
+[tool.ruff.format]
+# Dùng Ruff Formatter thay cho Black
+quote-style = "double"            # thống nhất dùng nháy đôi (khớp Q)
+indent-style = "space"
+line-ending = "auto"
+skip-magic-trailing-comma = false
+docstring-code-format = true      # format code block bên trong docstring
