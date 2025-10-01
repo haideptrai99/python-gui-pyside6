@@ -1,10 +1,6 @@
-from PySide6.QtCore import QSize
+from PySide6.QtCore import QSize, Slot
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QMainWindow, QPushButton, QStatusBar, QToolBar
-
-
-def toolbar_button_click():
-    print("action triggered")
 
 
 class MainWindow(QMainWindow):
@@ -46,13 +42,13 @@ class MainWindow(QMainWindow):
         # using QAction
         action1 = QAction("Some Action", self)
         action1.setToolTip("Status message for some action")
-        action1.triggered.connect(toolbar_button_click)
+        action1.triggered.connect(self.toolbar_button_click)
         toolbar.addAction(action1)
 
         # using Action with icon
         action2 = QAction(QIcon("start.png"), "Some other action", self)
         action2.setToolTip("Status message for some other action")
-        action2.triggered.connect(toolbar_button_click)
+        action2.triggered.connect(self.toolbar_button_click)
         toolbar.addAction(action2)
 
         # add Separator
@@ -65,3 +61,7 @@ class MainWindow(QMainWindow):
 
     def quit_app(self):
         self.app.quit()
+
+    @Slot()
+    def toolbar_button_click(self):
+        print("action triggered")
