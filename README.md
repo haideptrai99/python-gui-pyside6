@@ -8,3 +8,8 @@ pyside6-uic widget.ui -o ui_widget.py
 ```python
 # noinspection PyPep8Naming,PyMethodMayBeStatic,PyAttributeOutsideInit
 ```
+# convert resource to python
+
+```python
+pyside6-rcc resource.qrc -o resource_rc.py
+```
