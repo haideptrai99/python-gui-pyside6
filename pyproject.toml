@@ -35,14 +35,13 @@ select = ["E", "F", "I", "B", "UP", "C4", "A", "Q", "N"]
 ignore = [
   "E203",   # tương thích formatter về space trước dấu ':' / slice
   "E402",   # cho phép import sau code module-level (thường trong script)
-]
+] # format code block bên trong docstring
 
-# Châm chước cho file sinh tự động từ Qt Designer & resource compiler
 [tool.ruff.lint.per-file-ignores]
 # File sinh bởi pyside6-uic: thường có camelCase, dòng dài, import reordering
-"**/ui_*.py" = ["E501", "N", "I001", "B", "A"]
+"ui_*.py" = ["E501", "N", "I001", "B", "A"]
 # File resource (*.qrc -> *_rc.py): thường rất dài và import đặc thù
-"**/*_rc.py" = ["E501", "F401", "I001", "B", "A"]
+"*_rc.py" = ["E501", "F401", "I001", "B", "A"]
 
 [tool.ruff.lint.isort]
 # Giúp isort nhận diện đúng bên thứ ba
@@ -57,4 +56,4 @@ quote-style = "double"            # thống nhất dùng nháy đôi (khớp Q)
 indent-style = "space"
 line-ending = "auto"
 skip-magic-trailing-comma = false
-docstring-code-format = true      # format code block bên trong docstring
+docstring-code-format = true
