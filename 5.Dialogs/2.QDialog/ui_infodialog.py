@@ -106,10 +106,10 @@ class Ui_InfoDialog(object):
 
         self.horizontalLayout_3.addWidget(self.ok_button)
 
-        self.cancel_buton = QPushButton(InfoDialog)
-        self.cancel_buton.setObjectName("cancel_buton")
+        self.cancel_button = QPushButton(InfoDialog)
+        self.cancel_button.setObjectName("cancel_button")
 
-        self.horizontalLayout_3.addWidget(self.cancel_buton)
+        self.horizontalLayout_3.addWidget(self.cancel_button)
 
         self.verticalLayout.addLayout(self.horizontalLayout_3)
 
@@ -134,6 +134,6 @@ class Ui_InfoDialog(object):
         )
 
         self.ok_button.setText(QCoreApplication.translate("InfoDialog", "Ok", None))
-        self.cancel_buton.setText(QCoreApplication.translate("InfoDialog", "Cancel", None))
+        self.cancel_button.setText(QCoreApplication.translate("InfoDialog", "Cancel", None))
 
     # retranslateUi
