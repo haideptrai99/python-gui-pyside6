@@ -2,6 +2,7 @@ import sys
 
 from PySide6 import QtWidgets
 from widget import Widget
+from dump_qt_ui import generate_qss_skeleton
 
 app = QtWidgets.QApplication(sys.argv)
 
@@ -13,5 +14,5 @@ with open("styles/style.css", "r") as f:
 
 window = Widget()
 window.show()
-
+generate_qss_skeleton(app)
 app.exec()

@@ -1,0 +1,271 @@
+/* Auto-generated QSS skeleton */
+/* QSS notes:
+   - Only selectors for widgets with objectName are generated.
+   - QSS does NOT support '>' child combinator — descendant uses a space.
+   - Fill in rule bodies below. */
+
+#cancel_button {
+
+
+}
+
+#favorite_os_combo_box {
+
+}
+
+#favorite_os_combo_box #qt_scrollarea_hcontainer {
+
+}
+
+#favorite_os_combo_box #qt_scrollarea_vcontainer {
+
+}
+
+#favorite_os_combo_box #qt_scrollarea_viewport {
+
+}
+
+#favorite_os_combo_box QWidget#qt_scrollarea_hcontainer {
+
+}
+
+#favorite_os_combo_box QWidget#qt_scrollarea_vcontainer {
+
+}
+
+#favorite_os_combo_box QWidget#qt_scrollarea_viewport {
+
+}
+
+#horizontalLayout {
+
+}
+
+#horizontalLayout_2 {
+
+}
+
+#horizontalLayout_3 {
+
+}
+
+#info_label {
+
+}
+
+#InfoDialog {
+
+}
+
+#InfoDialog #cancel_button {
+
+}
+
+#InfoDialog #favorite_os_combo_box {
+
+}
+
+#InfoDialog #label {
+
+}
+
+#InfoDialog #label_2 {
+
+}
+
+#InfoDialog #ok_button {
+
+}
+
+#InfoDialog #position_line_edit {
+
+}
+
+#InfoDialog #verticalLayout {
+
+}
+
+#InfoDialog QComboBox#favorite_os_combo_box {
+
+}
+
+#InfoDialog QLabel#label {
+
+}
+
+#InfoDialog QLabel#label_2 {
+
+}
+
+#InfoDialog QLineEdit#position_line_edit {
+
+}
+
+#InfoDialog QPushButton#cancel_button {
+
+}
+
+#InfoDialog QPushButton#ok_button {
+
+}
+
+#InfoDialog QVBoxLayout#verticalLayout {
+
+}
+
+#label {
+
+}
+
+#label_2 {
+
+}
+
+#ok_button {
+
+}
+
+#position_line_edit {
+
+}
+
+#provide_info_button {
+
+}
+
+#qt_scrollarea_hcontainer {
+
+}
+
+#qt_scrollarea_vcontainer {
+
+}
+
+#qt_scrollarea_viewport {
+
+}
+
+#verticalLayout {
+
+}
+
+#verticalLayout #horizontalLayout {
+
+}
+
+#verticalLayout #horizontalLayout_2 {
+
+}
+
+#verticalLayout #horizontalLayout_3 {
+
+}
+
+#verticalLayout QHBoxLayout#horizontalLayout {
+
+}
+
+#verticalLayout QHBoxLayout#horizontalLayout_2 {
+
+}
+
+#verticalLayout QHBoxLayout#horizontalLayout_3 {
+
+}
+
+#Widget {
+
+}
+
+#Widget #info_label {
+
+}
+
+#Widget #provide_info_button {
+
+}
+
+#Widget #verticalLayout {
+
+}
+
+#Widget QLabel#info_label {
+
+}
+
+#Widget QPushButton#provide_info_button {
+
+}
+
+#Widget QVBoxLayout#verticalLayout {
+
+}
+
+InfoDialog#InfoDialog {
+
+}
+
+QComboBox#favorite_os_combo_box {
+
+}
+
+QHBoxLayout#horizontalLayout {
+
+}
+
+QHBoxLayout#horizontalLayout_2 {
+
+}
+
+QHBoxLayout#horizontalLayout_3 {
+
+}
+
+QLabel#info_label {
+
+}
+
+QLabel#label {
+
+}
+
+QLabel#label_2 {
+
+}
+
+QLineEdit#position_line_edit {
+
+}
+
+QPushButton#cancel_button {
+
+}
+
+QPushButton#ok_button {
+
+}
+
+QPushButton#provide_info_button {
+
+}
+
+QVBoxLayout#verticalLayout {
+
+}
+
+QWidget#qt_scrollarea_hcontainer {
+
+}
+
+QWidget#qt_scrollarea_vcontainer {
+
+}
+
+QWidget#qt_scrollarea_viewport {
+
+}
+
+Widget#Widget {
+
+}
+
